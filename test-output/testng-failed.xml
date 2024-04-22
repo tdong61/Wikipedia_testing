@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.testng.reporters.EmailableReporter2"/>
+    <listener class-name="org.testng.reporters.FailedReporter"/>
+  </listeners>
+  <test thread-count="5" name="C:/Users/HP/IdeaProjects/MavenTestNG_projects(failed)">
+    <classes>
+      <class name="wikipedia">
+        <methods>
+          <include name="currentEvents"/>
+          <include name="start"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- wikipedia -->
+      <class name="wikipedia_tools">
+        <methods>
+          <include name="start"/>
+          <include name="register"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- wikipedia_tools -->
+      <class name="wikipedia_sandbox">
+        <methods>
+          <include name="user_page"/>
+          <include name="start"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- wikipedia_sandbox -->
+    </classes>
+  </test> <!-- C:/Users/HP/IdeaProjects/MavenTestNG_projects(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

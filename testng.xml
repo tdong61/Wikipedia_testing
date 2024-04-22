@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="none">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2"></listener>
+        <listener class-name="org.testng.reporters.FailedReporter"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/HP/IdeaProjects/MavenTestNG_projects">
+        <classes>
+            <class name="wikipedia_start">
+                <methods>
+                    <include name="start"></include>
+                    <include name="quit"></include>
+                </methods>
+            </class>
+            <class name="wikipedia">
+                <methods>
+                    <include name="setup"></include>
+                    <include name="source_template"></include>
+                    <include name="language"></include>
+                    <include name="currentEvents"></include>
+                    <include name="close"></include>
+                </methods>
+            </class>
+            <class name="wikipedia_tools">
+                <methods>
+                    <include name="tools"></include>
+                    <include name="correct_login"></include>
+                    <include name="logout"></include>
+                    <include name="register"></include>
+                    <include name="profile"></include>
+                    <include name="preferences_check"></include>
+                    <include name="preferences_shortened_url"></include>
+                </methods>
+            </class>
+            <class name="wikipedia_today_article">
+                <methods>
+                    <include name="article"></include>
+                    <include name="article_header_buttons"></include>
+                    <include name="citation"></include>
+                    <include name="search"></include>
+                    <include name="article_references"></include>
+                    <include name="pdf_download"></include>
+                </methods>
+            </class>
+            <class name="wikipedia_gallery">
+                <methods>
+                    <include name="picture"></include>
+                    <include name="gallery_options"></include>
+
+                </methods>
+            </class>
+            <class name="wikipedia_sandbox">
+                <methods>
+                    <include name="start_sandbox"></include>
+                    <include name="user_page"></include>
+                    <include name="revision_history"></include>
+                </methods>
+            </class>
+            <class name="wikipedia_contribution">
+                <methods>
+                    <include name="contribution_setup"></include>
+                    <include name="contribution_buttons"></include>
+                    <include name="check_contribution"></include>
+                    <include name="atom"></include>
+                    <include name="edit_count"></include>
+                </methods>
+            </class>
+            <class name="wikipedia_watchlist">
+                <methods>
+                    <include name="setup"></include>
+                    <include name="view_relevant_changes"></include>
+                    <include name="watchlist_filter"></include>
+                </methods>
+            </class>
+            <class name="wikipedia_watchlist_cont">
+                <methods>
+                    <include name="setup"></include>
+                    <include name="view_edit_watchlist"></include>
+                    <include name="edit_raw_watchlist"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
